@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Loomian Legacy Best Move Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Loomian Legacy Best Move Calculator</h1>
+        
+        <div class="input-section">
+            <h2>Your Loomian</h2>
+            <input type="text" id="yourLoomian" placeholder="Your Loomian Name" required>
+            <input type="number" id="yourHP" placeholder="Your Loomian HP" required>
+            <input type="number" id="yourEnergy" placeholder="Your Loomian Energy" required>
+            <textarea id="yourMoves" placeholder="Your Loomian Moves (comma separated)" required></textarea>
+        </div>
+        
+        <div class="input-section">
+            <h2>Opposing Loomian</h2>
+            <input type="text" id="opposingLoomian" placeholder="Opposing Loomian Name" required>
+            <input type="number" id="opposingHP" placeholder="Opposing Loomian HP" required>
+            <input type="number" id="opposingEnergy" placeholder="Opposing Loomian Energy" required>
+            <textarea id="opposingMoves" placeholder="Opposing Loomian Moves (comma separated)" required></textarea>
+        </div>
+
+        <div class="input-section">
+            <h2>Team Information</h2>
+            <input type="number" id="yourTeamLoomians" placeholder="Your Loomians Left" required>
+            <input type="number" id="opposingTeamLoomians" placeholder="Opposing Loomians Left" required>
+        </div>
+
+        <button id="calculateBtn">Calculate Best Move</button>
+
+        <h2>Best Move:</h2>
+        <p id="bestMoveOutput"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
